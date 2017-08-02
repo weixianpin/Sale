@@ -17,16 +17,11 @@ body {
 	}
 	@media (min-width:@screen-sm-min){
 		height: 480px;
+		.container{
+			position:relative;
+		}
 	}
-	@media (min-width:@screen-md-min){
-		height: 540px;
-		background: #191919 url(../img/subway-1600x1060.jpg) center center no-repeat;
-		-webkit-background-size:over;
-		-moz-background-size:over;
-		background-size: over;
-	}
-	position: relative;
-		.welcome-message{
+	.welcome-message{
 			background-color: hsla(0,0,1%,0.4);
 			position: absolute;
 			top: 0;
@@ -37,6 +32,17 @@ body {
 			strong{
 				font-size: 1.5em;
 				text-transform: uppercase;
+				display: block;
 			}
+			right: 20%;
+			bottom: auto;
 		}
+	@media (min-width:@screen-md-min){
+		height: 540px;
+		background: #191919 url(../img/subway-1600x1060.jpg) center center no-repeat;
+		-webkit-background-size:over;
+		-moz-background-size:over;
+		background-size: over;
+	}
+	position: relative;
 }
