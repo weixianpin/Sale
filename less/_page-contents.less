@@ -279,3 +279,20 @@ body {
 		padding-bottom: 24px;
 	}
 }
+//叠放顺序
+#signup .package-basic {
+	margin-right: -28px;
+	margin-left: 28px;
+	z-index: 1;
+}
+#signup .package-premuim {
+	z-index: 1000;
+}
+#signup .package-pro {
+	z-index: 1;
+}
+@media (max-width:@screen-sm-max){
+	#signup .package-basic{
+		margin: 56px auto 20px;
+	}
+}
