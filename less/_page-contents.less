@@ -20,6 +20,13 @@ body {
 		.container{
 			position:relative;
 		}
+		.welcome-message{
+			right: 20%;
+			bottom: auto;
+			strong{
+				display: block;
+			}
+		}
 	}
 	.welcome-message{
 			background-color: hsla(0,0,1%,0.4);
@@ -32,10 +39,7 @@ body {
 			strong{
 				font-size: 1.5em;
 				text-transform: uppercase;
-				display: block;
 			}
-			right: 20%;
-			bottom: auto;
 		}
 	@media (min-width:@screen-md-min){
 		height: 540px;
@@ -43,6 +47,9 @@ body {
 		-webkit-background-size:over;
 		-moz-background-size:over;
 		background-size: over;
+		.welcome-message{
+			right: 50%;
+		}
 	}
 	position: relative;
 }
