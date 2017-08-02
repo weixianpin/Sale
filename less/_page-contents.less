@@ -248,3 +248,34 @@ body {
 		.button-variant(#fff;@brand-tertiary;darken(@brand-tertiary,5%));
 	}
 }
+//constrain width for small screens and under
+/**
+使得表格在480px--992px之间时，只能容纳一列的表格与屏幕一样宽时，限定其只有400px宽
+**/
+@media (max-width:@screen-sm-max){
+	#signup .package{
+		max-width: 400px;
+		.center-block();
+	}
+}
+
+@media (min-width:@screen-md-min){
+	//缩小 basic和 pro
+	#signup .package-basic table,
+	#signup .package-pro table{
+		width: 90%;
+		margin-top: 36px;
+	}
+	//增大 premuim
+	#signup .package-premium table{
+		font-size: 1.5em;
+		h2{
+			font-size: 1.5em;
+		}
+	}
+	a.btn{
+		font-size: 2em;
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+}
